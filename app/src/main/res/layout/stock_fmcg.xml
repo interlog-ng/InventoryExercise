@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="@drawable/warehss"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textColor="#6ce1cd"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="user id"/>
+            <TextView
+                android:id="@+id/textViewId"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Random Number"/>
+            <EditText
+                android:id="@+id/randomNos"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Customer Name"/>
+            <Spinner
+                android:id="@+id/custName"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:entries="@array/cus_name"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Location/Address"/>
+            <AutoCompleteTextView
+                android:id="@+id/locatAdr"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:dropDownHeight="60dp"
+                android:inputType="textCapSentences"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+
+        <!--LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Market Name"/>
+            <Spinner
+                android:id="@+id/mktName"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:entries="@array/mkt_fmcg"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Reporting Date"/>
+            <EditText
+                android:id="@+id/dt"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:hint="@string/date"
+                android:layout_margin="3dp"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:textSize="13sp"
+                android:text="Product Name"/>
+            <AutoCompleteTextView
+                android:id="@+id/prodtName"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:dropDownHeight="60dp"
+                android:inputType="textCapCharacters"
+                android:background="@drawable/edit_text_drawable"/>
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/meas"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:dropDownHeight="60dp"
+            android:inputType="textCapCharacters"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="Enter Size"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="No of Cartons"/>
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Qty per Carton"/>
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Total"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/firstNum"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="No of Cartons"/>
+        <EditText
+            android:id="@+id/secondNum"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="Qty per Carton"/>
+        <TextView
+            android:id="@+id/totalCP"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:textSize="20sp"
+            android:hint="Total"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Price per carton"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Total price of cartons"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/crtnPrc"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_drawable"
+                android:hint="Price per carton"/>
+            <TextView
+                android:id="@+id/totalCtP"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:hint="Total price of cartons"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="No of Rolls"/>
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Qty per Roll"/>
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Total"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/fstNum"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="No of Rolls"/>
+        <EditText
+            android:id="@+id/secNum"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="Qty per Roll"/>
+        <TextView
+            android:id="@+id/totalRP"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:textSize="20sp"
+            android:hint="Total"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Price per roll"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Total price of rolls"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/rolPrc"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_drawable"
+                android:hint="Price per roll"/>
+            <TextView
+                android:id="@+id/totalRoP"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:hint="Total price of rolls"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Extra Pieces"/>
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Price per piece"/>
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:hint="Extra Pieces Price"/>
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/extraPcs"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_drawable"
+            android:hint="Extra Pieces"/>
+            <EditText
+                android:id="@+id/pcPrc"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_drawable"
+                android:hint="Price per piece"/>
+            <TextView
+                android:id="@+id/exPp"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Price"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="Total price in pieces"/>
+
+            <TextView
+                android:id="@+id/totalpcP"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:hint="Total price in pieces"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="Total breakdown in pieces"/>
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="Total Breakdown in Pieces"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="Total value price"/>
+            <TextView
+                android:id="@+id/tvPri"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="Total Value Price"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#4848ce"
+        android:textColor="#ffffff"
+        android:onClick="onClick"
+        android:text="@string/submit"/>
+</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

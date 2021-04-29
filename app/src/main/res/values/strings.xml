@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">ILStockInventory</string>
+
+
+    <string name="title_location_permission">Request Location Permission</string>
+    <string name="ok">OK</string>
+    <string name="text_location_permission">Please Give me permission</string>
+
+    <string name="title">FMCG Stock Inventory</string>
+    <string name="title_wc">Wet Cargo Stock Report</string>
+    <string name="title_dc">Dry Cargo Stock Report</string>
+    <string name="date">dd/mm/yyyy</string>
+    <string name="submit">submit</string>
+    <string name="product_name">product name</string>
+    <string name="customer_name">customer name</string>
+    <string name="location_addr">location address</string>
+    <string-array name="location_fmcg">
+        <item></item>
+        <item>Location1</item>
+        <item>Location2</item>
+        <item>Location3</item>
+    </string-array>
+    <string-array name="mkt_fmcg">
+        <item></item>
+        <item>Market1</item>
+        <item>Market2</item>
+        <item>Market3</item>
+    </string-array>
+    <string-array name="product_fmcg">
+        <item></item>
+        <item>Product1</item>
+        <item>Product2</item>
+        <item>Product3</item>
+    </string-array>
+    <string-array name="location_og">
+        <item></item>
+        <item>Location1</item>
+        <item>Location2</item>
+        <item>Location3</item>
+    </string-array>
+    <string-array name="cus_name">
+        <item></item>
+        <item>DIVINE BEES DISTRIBUTION (DBD) LTD</item>
+        <item>TEX ALOBO NIG LTD</item>
+        <item>ABJ FOUNTAINS AND GENERAL SERVICE LTD</item>
+        <item>TEE ONE VENTURES LIMITED</item>
+        <item>EUGMARK INDUSTRIES LTD</item>
+        <item>MOFAD STORES NIGERIA LTD</item>
+        <item>TWINS FAGA NIGERIA LIMITED</item>
+    </string-array>
+    <string-array name="product_og">
+        <item></item>
+        <item>product1</item>
+        <item>product2</item>
+        <item>product3</item>
+    </string-array>
+    <string name="cargo">Cargo</string>
+    <string name="fmcg">fmcg</string>
+    <string name="dry_cargo">Dry Cargo</string>
+    <string name="wet_cargo">Wet Cargo</string>
+    <string name="gps_location">upload image</string>
+    <string name="chsImg0">select location image</string>
+    <string name="chsImg1">select outside image</string>
+    <string name="chsImg2">select inside image </string>
+    <string name="chsImg3">select your image</string>
+    <string name="upload">upload image</string>
+    <string name="uploadCG">Upload Cargo location images before inspection/stock taking</string>
+    <string name="uploadFMCG">Upload location image before inspection/stock taking. Keep internet on.</string>
+
+    <string name="pref_file">com.zeathon.preference_file</string>
+    <string name="pref_login_status">com.zeathon.preference_login_status</string>
+    <string name="pref_user_name">com.zeathon.preference_user_name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="logout">Logout</string>
+    <string name="welcome">Welcome</string>
+
+    <string name="to_do">To Do</string>
+    <string name="enter_note">Enter Note</string>
+    <string name="date2">15 Dec 2020</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="update">update</string>
+    <string name="save">save</string>
+</resources>
